@@ -44,7 +44,7 @@ class Temperature:
 
 def handle_year(year, file_path):
     text_files = glob.glob1(file_path, '*.txt')
-    matched_files = [s for s in text_files if year in s]
+    matched_files = [file for file in text_files if year in file]
 
     temperature_objects = []
     for file in matched_files:
